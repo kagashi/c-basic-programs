@@ -9,9 +9,9 @@ for(i=0;i<n;i++)
 scanf("%d",&a[i]);
 printf("enter the location which should be deleted");
 scanf("%d",&j);
-for(i=j;i>=0;i--)
+for(i=j-1;i>=n;i--)
 {
-a[i-1]=a[i];
+a[i]=a[i+1];
 }
 n--;
 for(i=0;i<n;i++)
